@@ -31,110 +31,112 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
   }
 
   switch (basePath) {
-    case '/':
-      return {
-        title: `${t('Home')} | ${t('PancakeSwap')}`,
-      }
-    case '/swap':
-      return {
-        title: `${t('Exchange')} | ${t('PancakeSwap')}`,
-      }
-    case '/add':
-      return {
-        title: `${t('Add Liquidity')} | ${t('PancakeSwap')}`,
-      }
-    case '/remove':
-      return {
-        title: `${t('Remove Liquidity')} | ${t('PancakeSwap')}`,
-      }
-    case '/liquidity':
-      return {
-        title: `${t('Liquidity')} | ${t('PancakeSwap')}`,
-      }
-    case '/find':
-      return {
-        title: `${t('Import Pool')} | ${t('PancakeSwap')}`,
-      }
-    case '/competition':
-      return {
-        title: `${t('Trading Battle')} | ${t('PancakeSwap')}`,
-      }
-    case '/prediction':
-      return {
-        title: `${t('Prediction')} | ${t('PancakeSwap')}`,
-      }
-    case '/prediction/leaderboard':
-      return {
-        title: `${t('Leaderboard')} | ${t('PancakeSwap')}`,
-      }
-    case '/farms':
-      return {
-        title: `${t('Farms')} | ${t('PancakeSwap')}`,
-      }
-    case '/farms/auction':
-      return {
-        title: `${t('Farm Auctions')} | ${t('PancakeSwap')}`,
-      }
-    case '/pools':
-      return {
-        title: `${t('Pools')} | ${t('PancakeSwap')}`,
-      }
-    case '/lottery':
-      return {
-        title: `${t('Lottery')} | ${t('PancakeSwap')}`,
-      }
-    case '/ifo':
-      return {
-        title: `${t('Initial Farm Offering')} | ${t('PancakeSwap')}`,
-      }
-    case '/teams':
-      return {
-        title: `${t('Leaderboard')} | ${t('PancakeSwap')}`,
-      }
-    case '/voting':
-      return {
-        title: `${t('Voting')} | ${t('PancakeSwap')}`,
-      }
-    case '/voting/proposal':
-      return {
-        title: `${t('Proposals')} | ${t('PancakeSwap')}`,
-      }
-    case '/voting/proposal/create':
-      return {
-        title: `${t('Make a Proposal')} | ${t('PancakeSwap')}`,
-      }
-    case '/info':
-      return {
-        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
-      }
-    case '/info/pools':
-      return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
-      }
-    case '/info/tokens':
-      return {
-        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
-      }
-    case '/nfts':
-      return {
-        title: `${t('Overview')} | ${t('PancakeSwap')}`,
-      }
-    case '/nfts/collections':
-      return {
-        title: `${t('Collections')} | ${t('PancakeSwap')}`,
-      }
-    case '/nfts/profile':
-      return {
-        title: `${t('Your Profile')} | ${t('PancakeSwap')}`,
-      }
-    case '/pancake-squad':
-      return {
-        title: `${t('Pancake Squad')} | ${t('PancakeSwap')}`,
-      }
+    // case '/':
+    //   return {
+    //     title: `${t('Home')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/swap':
+    //   return {
+    //     title: `${t('Exchange')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/add':
+    //   return {
+    //     title: `${t('Add Liquidity')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/remove':
+    //   return {
+    //     title: `${t('Remove Liquidity')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/liquidity':
+    //   return {
+    //     title: `${t('Liquidity')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/find':
+    //   return {
+    //     title: `${t('Import Pool')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/competition':
+    //   return {
+    //     title: `${t('Trading Battle')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/prediction':
+    //   return {
+    //     title: `${t('Prediction')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/prediction/leaderboard':
+    //   return {
+    //     title: `${t('Leaderboard')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/farms':
+    //   return {
+    //     title: `${t('Farms')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/farms/auction':
+    //   return {
+    //     title: `${t('Farm Auctions')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/pools':
+    //   return {
+    //     title: `${t('Pools')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/lottery':
+    //   return {
+    //     title: `${t('Lottery')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/ifo':
+    //   return {
+    //     title: `${t('Initial Farm Offering')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/teams':
+    //   return {
+    //     title: `${t('Leaderboard')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/voting':
+    //   return {
+    //     title: `${t('Voting')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/voting/proposal':
+    //   return {
+    //     title: `${t('Proposals')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/voting/proposal/create':
+    //   return {
+    //     title: `${t('Make a Proposal')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/info':
+    //   return {
+    //     title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
+    //     description: 'View statistics for Pancakeswap exchanges.',
+    //   }
+    // case '/info/pools':
+    //   return {
+    //     title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
+    //     description: 'View statistics for Pancakeswap exchanges.',
+    //   }
+    // case '/info/tokens':
+    //   return {
+    //     title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
+    //     description: 'View statistics for Pancakeswap exchanges.',
+    //   }
+    // case '/nfts':
+    //   return {
+    //     title: `${t('Overview')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/nfts/collections':
+    //   return {
+    //     title: `${t('Collections')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/nfts/profile':
+    //   return {
+    //     title: `${t('Your Profile')} | ${t('PancakeSwap')}`,
+    //   }
+    // case '/pancake-squad':
+    //   return {
+    //     title: `${t('Pancake Squad')} | ${t('PancakeSwap')}`,
+    //   }
     default:
-      return null
+      return {
+        title: 'Candice Coin Swap',
+      }
   }
 }
