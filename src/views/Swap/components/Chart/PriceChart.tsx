@@ -9,7 +9,7 @@ import {
   Skeleton,
   SyncAltIcon,
   Text,
-} from '@pancakeswap/uikit'
+} from '@candicecoin/uikit'
 import React, { useState } from 'react'
 import { format } from 'date-fns'
 import { CurrencyLogo, DoubleCurrencyLogo } from 'components/Logo'

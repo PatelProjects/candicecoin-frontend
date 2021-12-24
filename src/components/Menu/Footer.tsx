@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonMenu, ButtonMenuItem, LinkExternal, Flex, Svg, Image, Button } from '@pancakeswap/uikit'
+import { ButtonMenu, ButtonMenuItem, LinkExternal, Flex, Svg, Image, Button } from '@candicecoin/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const Wrapper = styled.div<{ $isSide: boolean }>`
@@ -42,7 +42,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
   const isSide = variant === 'side'
   return (
     <Wrapper $isSide={isSide}>
-      <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
+      {/* <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
           <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
@@ -58,7 +58,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
         >
           {t('Convert ERC-20 to BEP-20')}
         </LinkExternal>
-      </Flex>
+      </Flex> */}
       {isSide && <Flex flexGrow={1} />}
       <Flex
         flexGrow={isSide ? 0 : 1}
@@ -66,7 +66,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
         width={['100%', '100%', '100%', isSide ? '100%' : 'auto']}
         justifyContent={['center', 'center', 'center', 'flex-end']}
       >
-        <BubbleWrapper>
+        {/* <BubbleWrapper>
           <Button
             id="clickExchangeHelp"
             as="a"
@@ -80,7 +80,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
             <path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z" />
           </Svg>
         </BubbleWrapper>
-        <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
+        <Image src="/images/help.svg" alt="Get some help" width={160} height={108} /> */}
       </Flex>
     </Wrapper>
   )
