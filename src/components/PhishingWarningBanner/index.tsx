@@ -48,7 +48,7 @@ const PhishingWarningBanner: React.FC = () => {
   const warningTextAsParts = warningText.split(/(https:\/\/pancakeswap.finance)/g)
   const warningTextComponent = (
     <>
-      <Text as="span" color="warning" small bold textTransform="uppercase">
+      {/* <Text as="span" color="warning" small bold textTransform="uppercase">
         {t('Phishing warning: ')}
       </Text>
       {warningTextAsParts.map((text) => (
@@ -60,7 +60,7 @@ const PhishingWarningBanner: React.FC = () => {
         >
           {text}
         </Text>
-      ))}
+      ))} */}
     </>
   )
   return (

@@ -94,7 +94,7 @@ export const initialState: UserState = {
   pairs: {},
   timestamp: currentTimestamp(),
   audioPlay: true,
-  isDark: false,
+  isDark: true,
   isExchangeChartDisplayed: true,
   userFarmStakedOnly: FarmStakedOnly.ON_FINISHED,
   userPoolStakedOnly: false,
@@ -107,7 +107,7 @@ export const initialState: UserState = {
   gasPrice: GAS_PRICE_GWEI.default,
   watchlistTokens: [],
   watchlistPools: [],
-  showPhishingWarningBanner: true,
+  showPhishingWarningBanner: false,
 }
 
 export default createReducer(initialState, (builder) =>

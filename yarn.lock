@@ -1338,10 +1338,10 @@
     "@web3-react/types" "^6.0.7"
     tiny-warning "^1.0.3"
 
-"@candicecoin/uikit@^0.62.3":
-  version "0.62.3"
-  resolved "https://registry.yarnpkg.com/@candicecoin/uikit/-/uikit-0.62.3.tgz#377e40c1ca3eda4807e5ddf6a68a999f0d6a0825"
-  integrity sha512-0KbvBYtt1CYvz4viJBrmo6vhhYwM+4b/wG/xCnA+er5RuxD6wnRRzAcsDh5ZHCM7OW3RQUlEkWURBtRwfCM4/A==
+"@candicecoin/uikit@^0.63.2":
+  version "0.63.2"
+  resolved "https://registry.yarnpkg.com/@candicecoin/uikit/-/uikit-0.63.2.tgz#f5595cb3635099b5ce1cc5a58a311378d6e54cb5"
+  integrity sha512-4agzgg/YIfytJmHJilk3AO0KrJZYFBTG8tLmuXrdrJf0EVJ7oCnVxqiYeBNKWUG/UYPBpUXbuJSzico1u5rv3A==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
