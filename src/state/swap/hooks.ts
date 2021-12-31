@@ -389,13 +389,13 @@ export const useFetchPairPrices = ({
         // in that case try to get derived price
         const hasEnoughLiquidity = pairHasEnoughLiquidity(data, timeWindow)
         const newPairData = normalizeChartData(data, timeWindow) || []
-        if (newPairData.length > 0 && hasEnoughLiquidity) {
-          dispatch(updatePairData({ pairData: newPairData, pairId, timeWindow }))
-        } else {
-          console.info(`[Price Chart]: Liquidity too low for ${pairId}`)
-          dispatch(updatePairData({ pairData: [], pairId, timeWindow }))
-          fetchDerivedData()
-        }
+        // if (newPairData.length > 0 && hasEnoughLiquidity) {
+        dispatch(updatePairData({ pairData: newPairData, pairId, timeWindow }))
+        // } else {
+        //   console.info(`[Price Chart]: Liquidity too low for ${pairId}`)
+        //   dispatch(updatePairData({ pairData: [], pairId, timeWindow }))
+        //   fetchDerivedData()
+        // }
       } else {
         dispatch(updatePairData({ pairData: [], pairId, timeWindow }))
         fetchDerivedData()
